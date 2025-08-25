@@ -1,5 +1,5 @@
 import {type FC, useState} from 'react'
-import './Switch.scss'
+import './switch.scss'
 
 interface SwitchProps {
     variant:string
