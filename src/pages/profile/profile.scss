@@ -1,0 +1,315 @@
+@use "../../assets/scss/variables";
+@use "../../assets/scss/mixin";
+
+.profile-section {
+  padding-bottom: 50px;
+}
+
+.profile-body {
+  gap: 40px;
+  position: relative;
+}
+
+.p-block {
+  margin-top: 40px;
+}
+
+.profile-cnt-wrapper {
+  gap: 40px;
+  width: 100%;
+}
+
+.profile-info-body {
+  max-width: 890px;
+  width: 100%;
+}
+
+.profile-promotion {
+  padding: 8px 26px 8px 18px;
+  background: variables.$cyan;
+  border-radius: 10px;
+  gap: 14px;
+  width: 100%;
+
+  p {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 100%;
+    color: variables.$white;
+
+  }
+}
+
+.p-promotion-icon {
+  height: 48px;
+  max-width: 48px;
+  width: 100%;
+}
+
+.icon-union {
+  font-size: 16px;
+  background: variables.$white;
+  margin-left: auto;
+  display: block;
+}
+
+.profile-main-cnt {
+  margin-top: 45px;
+  max-width: 580px;
+  width: 100%;
+}
+
+.profile-page-title {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 36px;
+  color: variables.$cyan;
+
+}
+
+.choose-category {
+  margin-top: 20px;
+}
+
+.p-category-header {
+  gap: 8px;
+
+  div {
+    width: 22px;
+    height: 22px;
+    flex: 0 0 22px;
+    background: variables.$lightSaliva2;
+    border-radius: 50%;
+
+    i {
+      font-size: 13px;
+      background: variables.$white;
+
+    }
+  }
+
+  &.active {
+
+    div {
+      background: variables.$cyan;
+
+    }
+  }
+
+  p {
+    color: variables.$darkPeach;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.6px;
+
+  }
+}
+
+.choose-category-cnt {
+  margin-top: 11px;
+  gap: 9px;
+}
+
+.choose-category-items {
+  gap: 12px;
+  max-width: 130px;
+  width: 100%;
+}
+
+.choose-category-item {
+  gap: 7px;
+
+  p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    color: variables.$grey;
+
+  }
+
+  i {
+    background: variables.$cyanLight;
+    font-size: 11px;
+    cursor: pointer;
+  }
+
+}
+
+.c-category-info {
+  background: variables.$lightPeach;
+  padding: 24px 21px;
+  border-radius: 10px;
+  max-width: 440px;
+  width: 100%;
+  margin-top: 21px;
+
+  p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 120%;
+    color: variables.$grey;
+  }
+}
+
+.work-nickname-input {
+  gap: 10px;
+  width: 100%;
+}
+
+.w-nickname-edit {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  flex: 0 0 40px;
+  background: variables.$lightSaliva;
+  cursor: pointer;
+}
+
+.icon-edit2 {
+  font-size: 12px;
+  background: variables.$white;
+
+}
+
+.input-clue {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 100%;
+  color: variables.$grey;
+  margin-top: 5px;
+
+}
+
+.upload-texts-block {
+  margin-top: 13px;
+  gap: 30px;
+
+  p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    color: variables.$grey;
+
+    strong {
+      font-weight: 600;
+    }
+
+  }
+}
+
+.upload-images-block {
+  margin-top: 25px;
+}
+
+.upload-img-label {
+  border: 1px solid variables.$cyan;
+  max-width: 130px;
+  width: 100%;
+  max-height: 130px;
+  min-height: 130px;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+
+  i {
+    background: variables.$cyan;
+    font-size: 16px;
+  }
+
+  input {
+    display: none;
+  }
+}
+
+.uploaded-images {
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.uploaded-img-wrapper{
+  max-width: 130px;
+  width: 100%;
+
+  p{
+    color: variables.$grey;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 100%;
+    text-align: center;
+    margin-top: 2px;
+
+
+  }
+}
+
+.uploaded-img {
+  border: 1px solid #6F928E;
+  width: 100%;
+  height: 130px;
+  border-radius: 10px;
+  z-index: 2;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+  }
+
+  &::after {
+    content: "";
+    background: #FFFFFF80;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    inset: 0;
+    border-radius: 10px;
+
+  }
+
+  .remove-block{
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    width: 24px;
+    height: 24px;
+    background: variables.$darkPeach;
+    border-radius: 50%;
+    z-index: 2;
+    cursor: pointer;
+
+    i{
+      font-size: 12px;
+      background: variables.$white;
+      margin-left: unset;
+    }
+  }
+
+}
+.upload-errors{
+  gap: 10px;
+  margin-top: 5px;
+}
+.upload-error{
+ gap: 6px;
+
+  .icon-info{
+     background: variables.$error;
+    font-size: 11px;
+  }
+
+  p{
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 100%;
+    color: variables.$error;
+
+  }
+
+
+}
+

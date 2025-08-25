@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+.icon {
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+}
+.icon-search{
+    mask-image: url(search.svg);
+    -webkit-mask-image: url(search.svg);
+}
+.icon-map{
+    mask-image: url(map.svg);
+    -webkit-mask-image: url(map.svg);
+}
+.icon-login{
+    mask-image: url(iconLogin.svg);
+    -webkit-mask-image: url(iconLogin.svg);
+}
+
+.icon-check{
+  mask-image: url(check.svg);
+    -webkit-mask-image: url(check.svg);
+}
+.icon-geolocation{
+    mask-image: url(geolocation.svg);
+    -webkit-mask-image: url(geolocation.svg);
+}
+.icon-arrowDown{
+    mask-image: url(arrowDown.svg);
+    -webkit-mask-image: url(arrowDown.svg);
+}
+.icon-info{
+    mask-image: url(info.svg);
+    -webkit-mask-image: url(info.svg);
+}
+.icon-arrow{
+    mask-image: url(arrow.svg);
+    -webkit-mask-image: url(arrow.svg);
+}
+.icon-add{
+    mask-image: url(add.svg);
+    -webkit-mask-image: url(add.svg);
+}
+.icon-edit{
+    mask-image: url(edit.svg);
+    -webkit-mask-image: url(edit.svg);
+}
+.icon-visibility{
+    mask-image: url(visibility.svg);
+    -webkit-mask-image: url(visibility.svg);
+}
+.icon-union{
+    mask-image: url(Union.svg);
+    -webkit-mask-image: url(Union.svg);
+}
+.icon-check2{
+    mask-image: url(check2.svg);
+    -webkit-mask-image: url(check2.svg);
+}
+.icon-edit2{
+    mask-image: url(edit2.svg);
+    -webkit-mask-image: url(edit2.svg);
+}

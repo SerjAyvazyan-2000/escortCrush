@@ -1,0 +1,75 @@
+@use "../../assets/scss/variables";
+@use "../../assets/scss/mixin";
+
+
+.input-title {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 100%;
+  color: variables.$grey;
+  padding-bottom: 6px;
+
+}
+.input-block{
+  width: 100%;
+}
+
+.input-label {
+  width: 100%;
+
+  input {
+    width: 100%;
+    padding: 12px 19px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 100%;
+    color: variables.$grey;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: all .4s;
+
+    &:focus {
+      border: 1px solid variables.$darkPeach;
+    }
+
+  }
+}
+.lightPeach{
+  input{
+    background: variables.$lightPeach;
+
+  }
+}
+.white{
+  input{
+    background: variables.$white;
+
+  }
+
+}
+
+.input-tags {
+  gap: 4px;
+  margin-top: 3px;
+
+  i {
+    background: variables.$cyan;
+    font-size: 11px;
+  }
+
+  p{
+    font-weight: 400;
+    font-size: 11px;
+    color: variables.$grey;
+    line-height: 100%;
+
+  }
+  span{
+    font-weight: 400;
+    font-size: 11px;
+    color: variables.$grey;
+    line-height: 100%;
+    opacity: .3;
+    display: block;
+  }
+}

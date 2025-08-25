@@ -1,0 +1,165 @@
+@use "../../assets/scss/variables";
+@use "../../assets/scss/mixin";
+
+.profile-sidebar {
+  box-shadow: 5px 5px 25px 0 #BFAFAE40;
+  background: variables.$white4;
+  border-radius: 10px;
+  max-width: 270px;
+  width: 100%;
+  padding: 20px;
+  position: sticky;
+  top: 10px;
+  height: max-content;
+
+}
+
+.sidebar-user-logo {
+  cursor: pointer;
+  max-width: 61px;
+  height: 61px;
+  width: 100%;
+}
+
+.icon-add {
+  position: absolute;
+  font-size: 16px;
+  background: variables.$white;
+
+
+}
+
+.sidebar-user-info {
+  gap: 10px;
+}
+
+.sidebar-user-name {
+  h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 19px;
+    color: variables.$darkPeach;
+
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 100%;
+    color: variables.$gray2Light;
+    margin-top: 4px;
+
+  }
+}
+
+.s-user-status {
+  margin-top: 25px;
+}
+
+.s-status-switch {
+  gap: 9px;
+
+  p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 100%;
+    color: variables.$grey;
+
+  }
+}
+
+.user-status-clue {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 100%;
+  color: variables.$grey;
+  margin-top: 4px;
+  max-width: 173px;
+  width: 100%;
+}
+
+
+.s-profile-tools {
+  padding: 14px 20px 20px 20px;
+  border-radius: 5px;
+  background: variables.$white3;
+  margin-top: 25px;
+}
+
+
+.p-tools-texts {
+  h3 {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 100%;
+    color: variables.$grey2;
+
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 100%;
+    color: variables.$darkPeach;
+    margin-top: 3px;
+
+  }
+}
+
+
+.p-tools-items {
+  margin-top: 13px;
+  gap: 10px;
+}
+
+.p-tools-item {
+  gap: 6px;
+  cursor: pointer;
+
+  i {
+    background: variables.$grey;
+    font-size: 12px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 100%;
+    color: variables.$grey;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+.s-profile-menu {
+  margin-top: 27px;
+
+  ul {
+    gap: 14px;
+
+    li {
+      a {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 100%;
+        color: variables.$grey;
+
+        span{
+          color: variables.$gray2Light;
+        }
+      }
+    }
+  }
+}
+
+
+
+.s-profile-exit{
+  margin-top: 39px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 100%;
+  color: variables.$darkPeach;
+  cursor: pointer;
+
+}
